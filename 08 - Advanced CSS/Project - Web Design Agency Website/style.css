@@ -1,0 +1,97 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: beige;
+}
+
+.logo
+{
+    height: 30px;
+    margin: 20px 20px;
+}
+
+main h1
+{
+    width: 500px;
+    font-size: 3rem;
+    margin: 20px 20px;
+}
+
+main h1 span
+{
+    color: darkmagenta;
+}
+
+.card
+{
+    width: 45%;
+    margin: 20px;
+}
+
+.card-image
+{
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.card-title
+{
+    margin: 20px 0;
+}
+
+.card-text
+{
+    text-align: justify;
+}
+
+.left {float: left;}
+
+.right {float: right;}
+
+footer {
+    clear: both;
+    margin: 20px 0 0 0;
+    padding: 10px 20px;
+    background-color: darkmagenta;
+}
+
+footer p {
+    color: beige;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 680px) {
+    main h1, .card {width: 90%; left: 5%;}
+
+    .card-text {text-align: center;}
+}
+
+@media (max-width: 900px)
+{
+    header, main h1 {text-align: center;}
+
+    .card {display: block;}
+
+    main h1, .card {position: relative; margin-left: 0; margin-right: 0;}
+
+    .left, .right {float: none;}
+}
+
+@media (max-width: 1200px) {
+    .card {display: inline-block;}
+
+    .card-image {width: 100%; margin-right: 0; float: none;}
+
+    .card-title {text-align: center}
+}
+
+@media (min-width: 681px) and (max-width: 900px){
+    .card, main h1 {width: 80%; left: 10%;}
+}
